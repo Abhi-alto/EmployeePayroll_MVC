@@ -11,10 +11,10 @@ $(function () {
         $("#loaderbody").addClass('hide');
     });
 });
-
+//Jquerry ajax request for Add method in controller
 showInPopup = (url, title) => {
     $.ajax({
-        type: 'GET',
+        type: 'GET',         //with get request Add or edit will retain a form 
         url: url,
         success: function (res) {
             $('#form-modal .modal-body').html(res);
